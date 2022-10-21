@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/hitradio.png" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</head>
+<body onload="wall()">
+
+    <center><span class="mee"><h6><img src="/images/ic.png" width="20px" >By Mehdy</h6></span></center>
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="wrapper1">
+<ul>
+<h2 style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">this is just a template that i made, the real website is&nbsp;   <a href="https://www.hitradio.ma/" style="color: whitesmoke;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">hitradio.ma</a></h2>
+<br>
+<br>
+<li><a href="https://www.instagram.com/eelx001/"><img src="/images/ig.png" width="30px"></a></li>
+<li><a href="https://wa.me/212675275835"><img src="/images/wh.png" width="30px"></a></li>
+<li><a href="https://t.me/murphysi"><img src="/images/te.png" width="30px"></a></li>
+
+</ul>
+</div>
+<div class="content">
+      
+
+   <div class="player">
+       <div class="wrapper">
+           <div class="details">
+               
+               <div class="track-art"></div>
+               <div class="track-name">Track Name</div>
+               <div class="track-artist">Track Artist</div>
+           </div>
+
+           <div class="slider_container">
+               <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" disabled readonly class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+           </div>
+
+           <div class="slider_container">
+               <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+           </div>
+
+           <div class="buttons">
+            <div class="random-track" onclick="">
+               <!--<i class="fas fa-random fa-2x" title="random"></i>-->
+               </div>
+               <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track"  onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x" ></i>
+                </div>
+               <div class="repeat-track" onclick="">
+                    <!--<i class="fa fa-repeat fa-2x" title="repeat"></i>-->
+                   
+                </div>
+           </div>
+           
+           <div id="wave">
+            
+
+            <!--<span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>-->
+        </div>
+       </div>
+   </div>
+</div>
+   <script>
+
+        function wall(){
+
+        document.body.style.backgroundImage = "url('http://source.unsplash.com/1600x900/?" + "dj" + "')";
+        }
+
+   </script>
+</body>
+</html>
