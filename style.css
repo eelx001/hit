@@ -354,9 +354,9 @@ h6{
     }
 }
 
-@media only screen and (max-width: 375px) {
- 
- .menu-btn{
+@media only screen and (max-width:375px){
+
+  .menu-btn{
     position: absolute;
     z-index: 2;
     right: 20px;
@@ -376,5 +376,31 @@ h6{
     background: #C50001;
     transition: all 0.3s ease-in-out;
   }
- 
+
+  .player{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper{
+    
+  background-color: #8f0002;
+  background-image: linear-gradient(0deg, #9d0003 0%, #eb00009d 100%);
+
+  color: azure;
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 70px;
+  box-shadow: rgba(255, 0, 0, 0.363) 0px 19px 38px, rgba(238, 0, 0, 0.22) 0px 15px 12px;
+}
+body{
+
+  
+
+}
+
 }
