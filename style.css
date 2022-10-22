@@ -27,7 +27,7 @@
   .menu-btn{
     position: absolute;
     z-index: 2;
-    right: 20px;
+    right: 30px;
     /* left: 20px; */
     top: 20px;
     height: 50px;
@@ -352,4 +352,9 @@ h6{
         padding-top: 0vh;
         font-family: 'Quicksand', sans-serif;
     }
+}
+
+@media only screen and (max-width: 375px) {
+
+
 }
